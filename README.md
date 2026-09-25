@@ -38,3 +38,13 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 ## Live Deployment
 
 https://neighborhood-listing-platform-tau.vercel.app
+
+## Component Hierarchy
+
+App / Page
+├── Header / SearchFilters (<form>, <label>, <select>, <button>)
+├── Main Content Grid (1 col -> 2 col -> 3 col)
+│   ├── PropertyCard (<article>, <img>, <h3>, <address>, <ul>, <a>)
+│   ├── PropertyCard ...
+│   └── SponsorBanner (<aside>, <span>Sponsored</span>, <a>)
+└── Footer
