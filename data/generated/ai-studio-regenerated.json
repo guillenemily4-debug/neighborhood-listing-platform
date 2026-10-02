@@ -1,0 +1,111 @@
+{
+    "listings": [
+        {
+            "property_id": "PROP-9001",
+            "address": {
+                "street": "123 Whispering Pines Rd",
+                "city": "Faketown",
+                "state": "WA"
+            },
+            "price": 475000,
+            "bedrooms": 3,
+            "bathrooms": 2.0,
+            "square_feet": 1950,
+            "amenities": [
+                "central_air",
+                "yard",
+                "garage"
+            ],
+            "zip_code": "98001",
+            "local_sponsors": [
+                "SPONSOR-101",
+                "SPONSOR-102"
+            ]
+        },
+        {
+            "property_id": "PROP-9002",
+            "address": {
+                "street": "456 Mockingbird Ln",
+                "city": "Solaria",
+                "state": "FL"
+            },
+            "price": 620000,
+            "bedrooms": 4,
+            "bathrooms": 3.5,
+            "square_feet": 2800,
+            "amenities": [
+                "pool",
+                "balcony",
+                "central_air"
+            ],
+            "zip_code": "33101",
+            "local_sponsors": [
+                "SPONSOR-205"
+            ]
+        },
+        {
+            "property_id": "PROP-9003",
+            "address": {
+                "street": "789 Cobblestone Way",
+                "city": "Briarwood",
+                "state": "MA"
+            },
+            "price": 340000,
+            "bedrooms": 2,
+            "bathrooms": 1.0,
+            "square_feet": 1150,
+            "amenities": [
+                "fireplace",
+                "parking"
+            ],
+            "zip_code": "02108",
+            "local_sponsors": [
+                "SPONSOR-301",
+                "SPONSOR-309"
+            ]
+        },
+        {
+            "property_id": "PROP-9004",
+            "address": {
+                "street": "321 Starlight Ridge",
+                "city": "Canyonview",
+                "state": "NV"
+            },
+            "price": 525000,
+            "bedrooms": 3,
+            "bathrooms": 2.5,
+            "square_feet": 2100,
+            "amenities": [
+                "garage",
+                "yard",
+                "fireplace"
+            ],
+            "zip_code": "89101",
+            "local_sponsors": [
+                "SPONSOR-412"
+            ]
+        },
+        {
+            "property_id": "PROP-9005",
+            "address": {
+                "street": "654 Meadow Vista Dr",
+                "city": "Riverbend",
+                "state": "OH"
+            },
+            "price": 295000,
+            "bedrooms": 3,
+            "bathrooms": 2.0,
+            "square_feet": 1600,
+            "amenities": [
+                "parking",
+                "yard",
+                "central_air"
+            ],
+            "zip_code": "43201",
+            "local_sponsors": [
+                "SPONSOR-501",
+                "SPONSOR-502"
+            ]
+        }
+    ]
+}

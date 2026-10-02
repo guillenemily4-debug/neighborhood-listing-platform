@@ -1,0 +1,108 @@
+[
+  {
+    "property_id": "PROP-001",
+    "address": {
+      "street": "125 Maple Avenue",
+      "city": "Los Angeles",
+      "state": "CA"
+    },
+    "price": 625000,
+    "bedrooms": 3,
+    "bathrooms": 2,
+    "square_feet": 1450,
+    "amenities": [
+      "garage",
+      "central_air",
+      "yard"
+    ],
+    "zip_code": "90001",
+    "local_sponsors": [
+      "SPONSOR-001"
+    ]
+  },
+  {
+    "property_id": "PROP-002",
+    "address": {
+      "street": "842 Cedar Street",
+      "city": "Pasadena",
+      "state": "CA"
+    },
+    "price": 780000,
+    "bedrooms": 4,
+    "bathrooms": 3,
+    "square_feet": 1950,
+    "amenities": [
+      "garage",
+      "fireplace",
+      "yard"
+    ],
+    "zip_code": "91101",
+    "local_sponsors": [
+      "SPONSOR-002"
+    ]
+  },
+  {
+    "property_id": "PROP-003",
+    "address": {
+      "street": "410 Ocean View Drive",
+      "city": "Long Beach",
+      "state": "CA"
+    },
+    "price": 710000,
+    "bedrooms": 2,
+    "bathrooms": 2,
+    "square_feet": 1300,
+    "amenities": [
+      "balcony",
+      "parking",
+      "central_air"
+    ],
+    "zip_code": "90802",
+    "local_sponsors": [
+      "SPONSOR-001",
+      "SPONSOR-003"
+    ]
+  },
+  {
+    "property_id": "PROP-004",
+    "address": {
+      "street": "77 Pine Court",
+      "city": "Burbank",
+      "state": "CA"
+    },
+    "price": 850000,
+    "bedrooms": 3,
+    "bathrooms": 2.5,
+    "square_feet": 1725,
+    "amenities": [
+      "garage",
+      "pool",
+      "fireplace"
+    ],
+    "zip_code": "91501",
+    "local_sponsors": [
+      "SPONSOR-004"
+    ]
+  },
+  {
+    "property_id": "PROP-005",
+    "address": {
+      "street": "301 Sunset Lane",
+      "city": "Glendale",
+      "state": "CA"
+    },
+    "price": 695000,
+    "bedrooms": 3,
+    "bathrooms": 2,
+    "square_feet": 1600,
+    "amenities": [
+      "central_air",
+      "yard",
+      "parking"
+    ],
+    "zip_code": "91201",
+    "local_sponsors": [
+      "SPONSOR-002"
+    ]
+  }
+]
