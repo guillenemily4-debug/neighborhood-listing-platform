@@ -1,0 +1,111 @@
+{
+    "listings": [
+        {
+            "property_id": "PROP-1001",
+            "address": {
+                "street": "742 Evergreen Terr",
+                "city": "Springfield",
+                "state": "OR"
+            },
+            "price": 450000,
+            "bedrooms": 3,
+            "bathrooms": 2.0,
+            "square_feet": 1850,
+            "amenities": [
+                "garage",
+                "yard",
+                "central_air"
+            ],
+            "zip_code": "97477",
+            "local_sponsors": [
+                "SPONSOR-001",
+                "SPONSOR-004"
+            ]
+        },
+        {
+            "property_id": "PROP-1002",
+            "address": {
+                "street": "108 Ocean View Way",
+                "city": "Pacifica",
+                "state": "CA"
+            },
+            "price": 895000,
+            "bedrooms": 4,
+            "bathrooms": 3.5,
+            "square_feet": 2600,
+            "amenities": [
+                "pool",
+                "balcony",
+                "fireplace",
+                "garage"
+            ],
+            "zip_code": "94044",
+            "local_sponsors": [
+                "SPONSOR-002"
+            ]
+        },
+        {
+            "property_id": "PROP-1003",
+            "address": {
+                "street": "45 Pine Needle Ct",
+                "city": "Flagstaff",
+                "state": "AZ"
+            },
+            "price": 320000,
+            "bedrooms": 2,
+            "bathrooms": 1.5,
+            "square_feet": 1100,
+            "amenities": [
+                "fireplace",
+                "parking"
+            ],
+            "zip_code": "86001",
+            "local_sponsors": [
+                "SPONSOR-003",
+                "SPONSOR-005"
+            ]
+        },
+        {
+            "property_id": "PROP-1004",
+            "address": {
+                "street": "512 Willow Creek Blvd",
+                "city": "Austin",
+                "state": "TX"
+            },
+            "price": 610000,
+            "bedrooms": 3,
+            "bathrooms": 2.5,
+            "square_feet": 2150,
+            "amenities": [
+                "central_air",
+                "yard",
+                "garage"
+            ],
+            "zip_code": "78704",
+            "local_sponsors": [
+                "SPONSOR-001"
+            ]
+        },
+        {
+            "property_id": "PROP-1005",
+            "address": {
+                "street": "88 Silver Maple Dr",
+                "city": "Denver",
+                "state": "CO"
+            },
+            "price": 540000,
+            "bedrooms": 3,
+            "bathrooms": 2.0,
+            "square_feet": 1750,
+            "amenities": [
+                "balcony",
+                "parking",
+                "central_air"
+            ],
+            "zip_code": "80202",
+            "local_sponsors": [
+                "SPONSOR-006"
+            ]
+        }
+    ]
+}
