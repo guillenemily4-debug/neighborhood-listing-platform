@@ -316,3 +316,60 @@ test("Multi-ZIP sponsors receive no extra weight", () => {
 
   assert.equal(first?.id, second?.id);
 });
+
+test("Professor scenario: ZIP 90032 sponsor selection", () => {
+  const professorContext: SponsorContext = {
+    propertyId: "property-90032",
+    zipCode: "90032",
+    nearbyZipCodes: [],
+    placement: "property-sidebar",
+    today: "2026-10-22",
+  };
+
+  // Assumed priority mapping for this test:
+  // Silver = 1, Gold = 2, Platinum = 3.
+  // Distance and impressions are not selector inputs.
+  const candidates: SponsorCandidate[] = [
+    {
+      ...sponsor,
+      id: "sponsor-A",
+      priority: 1,
+      targetZipCodes: ["90032"],
+    },
+    {
+      ...sponsor,
+      id: "sponsor-B",
+      priority: 2,
+      targetZipCodes: ["90032"],
+    },
+    {
+      ...sponsor,
+      id: "sponsor-C",
+      priority: 2,
+      targetZipCodes: ["90032"],
+    },
+    {
+      ...sponsor,
+      id: "sponsor-D",
+      priority: 3,
+      isApproved: false,
+      targetZipCodes: ["90032"],
+    },
+  ];
+
+  const result = selectSponsor(professorContext, candidates);
+
+  assert.ok(result, "An eligible sponsor should be selected");
+  assert.notEqual(result.id, "sponsor-D");
+  assert.equal(result.id, "sponsor-B");
+
+  // Reversing input order must not change the winner.
+  const reversed = selectSponsor(
+    professorContext,
+    [...candidates].reverse()
+  );
+
+  assert.equal(result.id, reversed?.id);
+
+  console.log("Professor scenario winner:", result.id);
+});
