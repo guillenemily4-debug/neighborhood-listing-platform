@@ -2,6 +2,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import PropertySponsor from "@/components/PropertySponsor";
 
 type Property = {
   id: string;
@@ -136,6 +137,7 @@ export default function Home() {
                       {property.description}
                     </p>
                   )}
+                  <PropertySponsor propertyId={property.id} />
                 </article>
               ))}
             </div>
