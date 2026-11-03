@@ -13,8 +13,8 @@ All five required tables have Row-Level Security enabled.
 |---|---|---|---|---|
 | Anonymous | Read approved services | Allowed | Plumbing Inspection (approved) was visible | PASS |
 | Anonymous | Read draft services | Denied | Home Staging Consultation (draft) was hidden | PASS |
-| Provider A | Update own draft service | Allowed | Not tested | Pending |
-| Provider A | Update Provider B's service | Denied | Not tested | Pending |
+| Provider A | Update own draft service | Allowed | Home Staging Consultation updated successfully (1 row) | PASS |
+| Provider A | Update Provider B's service | Denied | Electrical Inspection update affected 0 rows | PASS |
 | Client | Submit booking for approved service | Allowed | Not tested | Pending |
 | Client | Read another client's booking | Denied | Not tested | Pending |
 | Admin | Read and manage all records using authorized elevated execution | Allowed | Not tested | Pending |
