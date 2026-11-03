@@ -105,3 +105,29 @@ Outstanding verification:
 - Full elevated administrator read/write across all schemas.
 - Authenticated API validation and creation tests.
 - Explicit non-admin approval denial test.
+
+## End-to-End Appointment Booking Test
+
+Environment: Local Next.js application and Supabase
+
+Test date: November 3, 2026
+
+Steps:
+1. Opened /services.
+2. Selected Plumbing Inspection.
+3. Entered client@example.com.
+4. Requested November 10, 2026.
+5. Entered "I would like a plumbing inspection."
+6. Submitted the booking form.
+7. Queried public.bookings in Supabase SQL Editor.
+
+Results:
+- Booking form displayed a success message.
+- A matching booking record was found in Supabase.
+- The booking was associated with Plumbing Inspection.
+- Requested date and booking notes were stored correctly.
+
+Status: PASS
+
+Note: This verifies the local booking flow, not
+the hosted production deployment.
