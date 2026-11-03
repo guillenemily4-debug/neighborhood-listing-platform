@@ -16,6 +16,7 @@ All five required tables have Row-Level Security enabled.
 | Provider A | Update own draft service | Allowed | Home Staging Consultation updated successfully (1 row) | PASS |
 | Provider A | Update Provider B's service | Denied | Electrical Inspection update affected 0 rows | PASS |
 | Provider A | Read bookings for own service | Allowed | 1 booking visible | PASS |
+| Provider A | Approve own draft service | Denied | PostgreSQL error 42501: RLS policy blocked approval | PASS |
 | Client | Submit booking | Allowed | 1 booking inserted successfully; transaction rolled back | PASS |
 | Client | Read another client's booking | Denied | Existing booking confirmed; client query returned 0 rows | PASS |
 | Admin | Read and manage all records using authorized elevated execution | Allowed | Not tested | Pending |
