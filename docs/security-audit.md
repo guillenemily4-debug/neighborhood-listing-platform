@@ -79,3 +79,28 @@ Verification tool: Local Supabase Studio SQL Editor
 Status: PASS — RLS activation and policy existence checks.
 
 Note: Role-based authorization tests are still pending.
+
+## Security Audit Summary
+
+Testing environment: Local Supabase Studio
+
+Verification completed:
+- RLS enabled across all five required tables.
+- Anonymous users can view approved services but not drafts.
+- Provider A can modify their own draft service.
+- Provider A cannot modify Provider B's service.
+- Providers can view bookings associated with their services.
+- Clients can submit bookings.
+- Clients cannot read other clients' bookings.
+- Administrators can read all services and bookings.
+- Administrators can approve draft services.
+- Administrators can suspend approved services.
+- Unauthenticated API submissions return HTTP 401.
+
+All database modification tests were performed
+using fictional local data.
+
+Outstanding verification:
+- Full elevated administrator read/write across all schemas.
+- Authenticated API validation and creation tests.
+- Explicit non-admin approval denial test.
