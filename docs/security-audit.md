@@ -15,9 +15,13 @@ All five required tables have Row-Level Security enabled.
 | Anonymous | Read draft services | Denied | Home Staging Consultation (draft) was hidden | PASS |
 | Provider A | Update own draft service | Allowed | Home Staging Consultation updated successfully (1 row) | PASS |
 | Provider A | Update Provider B's service | Denied | Electrical Inspection update affected 0 rows | PASS |
-| Client | Submit booking for approved service | Allowed | Not tested | Pending |
-| Client | Read another client's booking | Denied | Not tested | Pending |
+| Provider A | Read bookings for own service | Allowed | 1 booking visible | PASS |
+| Client | Submit booking | Allowed | 1 booking inserted successfully; transaction rolled back | PASS |
+| Client | Read another client's booking | Denied | Existing booking confirmed; client query returned 0 rows | PASS |
 | Admin | Read and manage all records using authorized elevated execution | Allowed | Not tested | Pending |
+| Admin | Read all services and bookings | Allowed | 3 services and 1 booking visible | PASS |
+| Admin | Approve draft service | Allowed | Electrical Inspection approval updated 1 row; transaction rolled back | PASS |
+| Admin | Suspend approved service | Allowed | Plumbing Inspection suspension updated 1 row; transaction rolled back | PASS |
 | Anonymous | POST /api/services without authentication | HTTP 401 Unauthorized | HTTP 401 Unauthorized | PASS |
 
 
